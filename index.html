@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Serious Dev - Projektowanie stron internetowych - Brodnica | Toruń | Grudziądz | Bydgosz	cz</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+<!--    <script src=""></script>-->
+
+</head>
+    
+<body>
+   
+        <div class="paralax c1" style="height:25vh;" >
+          
+        </div>
+        <div class="wrapper logowrapper" style="height:15vh;">
+            <div class="logobg2 abs " style="top:-50px;left:-50px;"></div>
+            <div class="logobgwh abs"></div>
+            <div class='logobg abs c1'></div>
+            <div class="logo abs" style="height:100%;width:100%;">  <h1 class="texts">Serious Dev</h1></div>
+        </div>
+        <div class="wrapper" style="height:60vh">
+            <div class="paralax abs" style="height:60vh;display:flex;justify-content:center;z-index:2;flex-flow:column;align-items:center;">
+                    <div class="textunderlogo" id="textblur">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, minus, accusamus. Totam saepe nostrum ex assumenda similique, distinctio asperiores minus obcaecati ullam quaerat et sapiente ut libero quo, doloribus tempore?</div>
+                    <br/>
+                <a href="#desc" style="display:contents;">
+       
+                <img src='arrow-204-128.png' style="width:15vh;height:15vh;position:relative;margin-top:auto;margin-bottom:5px;">
+                    </a>
+            </div>
+             <div class="paralax c1 abs" style="height:60vh;display:flex;justify-content:center;position;">
+            </div>
+        </div>
+     
+
+    <div  id="desc" class="content"></div>
+    <div class="paralax c2"></div>
+    <div  class="content"></div>
+    <div class="paralax c3"></div>
+    <div class="content"></div>
+    <script>
+    // handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos},1000,"swing");
+});
+    </script>
+    <script src="textshuffle.js"></script>
+    <script src="textblur.js"></script>
+</body>
+</html>
