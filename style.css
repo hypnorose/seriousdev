@@ -1,4 +1,5 @@
 
+
 .paralax{
   
     height:800px;
@@ -41,13 +42,23 @@
     color: white;
     font-size: 2.5vh;
     text-decoration: none;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
     top: 20%;
     position: relative;
     text-align: justify;
      font-family: 'Montserrat', sans-serif;
+    max-width:1000px;
 }
+@media only screen and (max-width:1000px){
+    .textunderlogo{
+        
+       max-width:90%;  
+    }
+    .textundeer
+    
+}
+
 .logo{
       font-family: 'Montserrat', sans-serif;
             display:flex;   
